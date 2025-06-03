@@ -17,9 +17,9 @@ async fn hello_world() -> &'static str {
 async fn setup_environment() { 
     let env_vars = [
         ("UUID", "58a5f43d-1b38-4f81-87db-1d77fe81b769"),
-        ("NEZHA_SERVER", "nezha.2828666.xyz:8008"),   // 哪吒v1填写形式：nezha.xxx.com:8008   // 哪吒v0填写形式：nezha.xxx.com
+        ("NEZHA_SERVER", ""),   // 哪吒v1填写形式：nezha.xxx.com:8008   // 哪吒v0填写形式：nezha.xxx.com
         ("NEZHA_PORT", ""),     // 哪吒v1请留空此变量，哪吒v0的agent端口
-        ("NEZHA_KEY", "catHtCz2zoItaEM96AK7IBNbhuR62CDr"),      // 哪吒v1的NZ-CLIENT_SECRET或哪吒v0的agent密钥
+        ("NEZHA_KEY", ""),      // 哪吒v1的NZ-CLIENT_SECRET或哪吒v0的agent密钥
         ("ARGO_DOMAIN", "shuttle.959818.xyz"),    // argo固定隧道域名，留空将使用临时隧道
         ("ARGO_AUTH", "eyJhIjoiNmYwZmIyNDM1ZDE5ZTU0OTJlZWFmMGJhOTMxYWRlNDQiLCJ0IjoiZWYxZDg1MjktOTUyZS00OTdmLTgxZTItMjcxNGJlNTg5ODJjIiwicyI6Ik1EWTNNR0ptTkRFdE9EUTRNUzAwTkRCa0xUbGlOR1V0TnpjM09ETTNaV0l5WlRVdyJ9"),      // argo固定隧道密钥，json或token,留空将使用临时隧道,
         ("ARGO_PORT", "8080"),  // argo端口，使用固定隧道token，需要在cloudflare后台也设置端口为8080
